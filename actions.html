@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de l'association - GreenFast</title>
+    <!-- Lien vers Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e8f4e5; /* Couleur de fond verte pâle */
+        }
+        header {
+            background-color: #28a745; /* Vert Bootstrap */
+        }
+        header a {
+            color: #fff; /* Texte blanc pour les liens */
+        }
+        section {
+            background-color: #ffffff; /* Fond blanc pour les sections */
+        }
+        footer {
+            background-color: #28a745; /* Vert Bootstrap pour le pied de page */
+            color: #fff; /* Texte blanc pour le pied de page */
+        }
+        /* Style pour la classe icones-emissions */
+        .icones-emissions {
+            display: flex; /* Utilisation de Flexbox pour aligner les éléments en ligne */
+            justify-content: space-between; /* Espacement égal entre les icônes */
+            flex-wrap: wrap; /* Passage à la ligne si l'espace est insuffisant */
+        }
+
+        /* Style pour chaque bloc d'icône */
+        .icone-emission {
+            text-align: center; /* Centrer le texte */
+            margin-bottom: 20px; /* Espacement entre chaque bloc d'icône */
+            flex: 0 0 calc(25% - 20px); /* Définition de la largeur de chaque bloc (quatre éléments par ligne) */
+        }
+
+    </style>
+</head>
+<body>
+     <header class="bg-success text-light">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="img/greenfact.png" class="img-fluid rounded" height="50" width="150"  alt="Green Fact">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="display-4">GreenFact</h1>
+                </div>
+                <div class="col-md-4">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                                <li class="nav-item"><a class="nav-link" href="actions.html">Actions</a></li>
+								<li class="nav-item"><a class="nav-link" href="formulaire.html">Formulaire</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+								  <li class="nav-item"><a class="nav-link" href="chat.html">CHAT</a></li>
+                               
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="apropos" class="py-5">
+        <div class="container">
+            <h2>À propos de l'association</h2>
+            <p>Le Réseau Action Climat-France fédère 27 associations nationales et 10 associations locales, autour de la lutte contre le changement climatique. Il agit à toutes les échelles pertinentes, de l’international au local. Il est par ailleurs le représentant en France d’un large réseau mondial et européen, regroupant près de 1900 membres à travers la planète.</p>
+            <p>Conscient des impacts majeurs, actuels et à venir, du changement climatique sur l’ensemble de nos sociétés, le Réseau Action Climat-France porte la mise en place de mesures pour réduire les émissions de gaz à effet de serre de l’ensemble des secteurs responsables. Convaincu que la lutte contre le changement climatique représente aussi une formidable option de sortie de crise et doit, pour réussir, bénéficier au plus grand nombre, il promeut des mesures à la fois bonnes pour le climat mais aussi porteuses de bénéfices en termes de création d’emplois, de préservation de la santé et de plus de justice sociale et de solidarité.</p>
+        </div>
+    <br>
+        <!-- Ajout des icônes dans une classe distincte -->
+        <div class="icones-emissions">
+            <div class="icone-emission">
+                <!-- Icone pour les transports -->
+                <img src="img/transports.png" alt="Icône Transports">
+                <p>Transports</p>
+            </div>
+            <div class="icone-emission">
+                <!-- Icone pour l'alimentation -->
+                <img src="img/alimentation.png" alt="Icône Alimentation">
+                <p>Alimentation</p>
+            </div>
+            <div class="icone-emission">
+                <!-- Icone pour le logement -->
+                <img src="img/logement.png" alt="Icône Logement">
+                <p>Logement</p>
+            </div>
+            <div class="icone-emission">
+                <!-- Icone pour les services sociétaux -->
+                <img src="img/services.png" alt="Icône Services Sociétaux">
+                <p>Services Sociétaux</p>
+            </div>
+        </div>
+        <section id="repartition-empreinte" class="py-5">
+        <div class="container">
+            <h2>La répartition de l'empreinte carbone des français</h2>
+            <p>L’estimation du niveau moyen de l’empreinte individuelle annuelle des Français serait d’environ 8 tonnes CO2eq pour l’année 2022. Il est probable que ce résultat minore un peu la réalité compte tenu de la difficulté de prise en compte de certains investissements dans la consommation des ménages.</p>
+        </div>
+        </section>
+        <section id="inegalites" class="py-5">
+            <div class="container">
+                <h2>Les inégalités d’émission en France : des solutions pour une transition juste</h2>
+                <p>- En France, les 1% les plus riches émettent en moyenne dix fois plus de CO2 par an par leur consommation (40,2 tonnes) que la moitié la plus pauvre des Français (3,8 tonnes).</p>
+                <p>- Pour atteindre nos objectifs climatiques d’ici 2030, les 1% des Français les plus riches doivent diviser par 10 leurs émissions, lorsque les 50% les plus pauvres doivent les réduire d’un quart pour arriver à 2,8 tonnes de CO2.</p>
+                <p>- Bernard Arnault, le Français le plus riche, a ainsi une empreinte carbone de consommation 1 270 fois supérieure à un Français moyen.</p>
+            </div>
+        </section>
+        <section id="missions" class="py-5">
+            <div class="container">
+                <h2>Nos missions</h2>
+                <p>- Développer une expertise sur les politiques de lutte contre les changements climatiques (d’atténuation et d’adaptation) aux niveaux international, européen, national et local.</p>
+                <p>- Orienter et accompagner les politiques menées en matière d’atténuation et d’adaptation dans les politiques énergétique, agricole, alimentaire et de mobilité de la France, dans la fiscalité et en matière de rénovation énergétique des bâtiments.</p>
+                <p>- Informer et sensibiliser toutes les parties (décideurs, entreprises, médias, citoyens, etc.) aux changements climatiques et questions qui lui sont liées pour faire évoluer les comportements et les modes de vie.</p>
+            </div>
+        </section>
+    </div>
+</section>
+
+    </section>
+    
+
+    <footer class="bg-success text-light text-center py-3">
+        <p>&copy; 2023 GreenFast. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers jQuery, Popper.js, et Bootstrap JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

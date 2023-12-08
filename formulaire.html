@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Green Fact</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+  <body>
+  <h1><a href="index.html">Retour</a></h1>
+  <main> 
+  <div class="container">
+  <label class="switch" for="darkModeToggle">
+    <input type="checkbox" id="darkModeToggle">
+    <span class="slider"></span>
+  </label>
+</div>
+
+<script>
+  // Sélectionner le bouton et ajouter un écouteur d'événements
+  document.getElementById('darkModeToggle').addEventListener('change', function () {
+    // Ajouter ou supprimer la classe dark-mode au corps du document
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+	<center>
+    <img class="logo" src="images/logo.png">
+	</center>
+    <div class="profiles">
+	  <div class="profile">
+        <div class="profile__image" style="background-image: url('https://static.actu.fr/uploads/2022/12/la-poste.jpeg"></div>
+        <div class="profile__infos">
+		  <div class="profile__name" style="color:#f3d539;">Ça dépend</div>
+          <div class="profile__description">La lettre utilise du papier et nécessite du transport, tandis que le courriel requiert des appareils électroniques et de l'électricité pour être envoyé. Le choix dépend des préférences, mais les deux ont des répercussions écologiques.
+		</div>
+        </div>
+      </div>
+	  <div class="profile">
+        <div class="profile__image" style="background-image: url('https://static.actu.fr/uploads/2022/12/la-poste.jpeg"></div>
+        <div class="profile__infos">
+          <div class="profile__name">C’est mieux d’envoyer une lettre qu’un mail ?</div>
+        </div>
+      </div>
+	  <div class="profile">
+        <div class="profile__image" style="background-image: url('https://particulier.hellio.com/hubfs/Blog%20Particuliers%20-%20Images/panneaux-solaires-toit-maison-tuiles.jpeg');"></div>
+        <div class="profile__infos">
+		  <div class="profile__name" style="color:#f33939;">Faux</div>
+          <div class="profile__description">Même par temps gris, les panneaux solaires captent la lumière pour produire de l'électricité. Cependant, leur efficacité diminue la nuit et par faible luminosité. Les régions ensoleillées sont privilégiées pour leur installation.
+		</div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profile__image" style="background-image: url('https://particulier.hellio.com/hubfs/Blog%20Particuliers%20-%20Images/panneaux-solaires-toit-maison-tuiles.jpeg');"></div>
+        <div class="profile__infos">
+          <div class="profile__name">Les panneaux solaires ne servent à rien s’il ne fait pas soleil ?</div>
+        </div>
+      </div>
+	  <div class="profile">
+        <div class="profile__image" style="background-image: url('https://img.freepik.com/photos-premium/vue-serre-bio-sorte-concept-semis-legumes-agriculture-jardinage_310913-936.jpg?w=2000');"></div>
+        <div class="profile__infos">
+		  <div class="profile__name" style="color:#f33939;">Faux</div>
+          <div class="profile__description">Les arbres captent la pollution atmosphérique mais transforment le dioxyde d’azote en ozone. Malgré cela, ils absorbent le dioxyde de carbone et préservent les sols, constituant des habitats vitaux pour la faune.
+		</div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profile__image" style="background-image: url('https://img.freepik.com/photos-premium/vue-serre-bio-sorte-concept-semis-legumes-agriculture-jardinage_310913-936.jpg?w=2000');"></div>
+        <div class="profile__infos">
+          <div class="profile__name">Manger bio aide à lutter contre l’effet de serre ?</div>
+        </div>
+      </div>
+	  <div class="profile">
+        <div class="profile__image" style="background-image: url('https://www.lesdebrouillards.com/wp-content/uploads/2016/04/foret560.jpg');"></div>
+        <div class="profile__infos">
+		  <div class="profile__name" style="color:#39f339;">Vrai</div>
+          <div class="profile__description">Les arbres captent la pollution atmosphérique mais transforment le dioxyde d’azote en ozone. Malgré cela, ils absorbent le dioxyde de carbone et préservent les sols, constituant des habitats vitaux pour la faune.
+		</div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="profile__image" style="background-image: url('https://www.lesdebrouillards.com/wp-content/uploads/2016/04/foret560.jpg');"></div>
+        <div class="profile__infos">
+          <div class="profile__name">Planter des arbres, ça aide à lutter contre la pollution ?</div>
+        </div>
+      </div>
+    </div>
+	<center><div class="text_swipe">SWIPE</div></center>
+    <div class="bottombar">
+      <div class="bottombar__button">
+        <img src="images/icon-next.svg">
+      </div>
+      <div class="bottombar__button">
+        <img src="images/icon-heart.svg">
+      </div>
+    </div>
+  </main>
+  <script src='js/hammer.min.js'></script>
+  <script src='js/main.js'></script>
+</body>
+</html>

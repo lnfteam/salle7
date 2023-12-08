@@ -1,0 +1,329 @@
+
+:root {
+  --light-grey:#fffdf8;
+  --dark-grey:#acacac;
+  --green:#4CAF50;
+  --red:#FF5252;
+  --black-transparent:rgba(0,0,0, 0.8);
+
+  --transition-time:.4s;
+}
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+html {
+  background:var(--light-grey);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-top: 42px;
+}
+
+main {
+  width: 300px;
+  max-width: 90%;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 30%;
+}
+
+.logo {
+  width:75%;
+}
+
+.text_swipe {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  font-weight: bold;
+  font-size:22px;
+  padding-top: 20px;
+}
+
+.profiles {
+  width:100%;
+  position: relative;
+  height:450px;
+}
+
+.profile {
+  position: absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor:pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.profiles::before {
+  content:'Vous en savez plus sur l\'écologie...';
+  color:var(--dark-grey);
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+}
+
+.profile__image {
+  height: 0;
+  padding-bottom:150%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.profile__infos {
+  padding:12px;
+  position:absolute;
+  bottom:0px;
+  background:linear-gradient(0deg, black, transparent);
+  width: 100%;
+}
+
+.profile__name {
+  color:white;
+  font-weight: bold;
+  font-size:22px;
+  position:abslolute;
+  top:50%;
+  left:50%;
+  padding-bottom:20px;
+  text-shadow: 4px 4px 8px black;
+}
+
+.profile__age {
+  color:var(--light-grey);
+  font-weight: normal;
+}
+
+.profile__description {
+  color:white;
+  font-size:17px;
+  text-shadow: 3px 3px 5px black;
+  padding-bottom: 100px;
+}
+
+
+.bottombar {
+  margin-top:24px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:24px;
+}
+
+.bottombar__button {
+  width: 64px;
+  height: 64px;
+  border-radius:100%;
+  background:white; 
+  padding:16px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.4s;
+}
+
+.bottombar__button:hover {
+  cursor:pointer;
+  opacity:0.8;
+}
+
+.profile--match {
+  transition: var(--transition-time);
+  transform:translateX(1500px) translateY(600px) rotate(90deg);
+}
+
+.profile--next {
+  transition: var(--transition-time);
+  transform:translateX(-1500px) translateY(600px) rotate(-90deg);
+}
+
+.profile--back {
+  transition:var(--transition-time);
+}
+
+.profile--matching::after, .profile--nexting::after {
+  content:'VRAI';
+  font-weight: bold;
+  font-size:28px;
+  padding:8px 12px;
+  border:solid 2px var(--green);
+  color:var(--green);
+  background:var(--black-transparent);
+  position:absolute;
+  top:24px;
+  right:12px;
+  border-radius: 4px;
+  transform:rotate(24deg);
+} 
+
+.profile--nexting::after {
+  content:'FAUX';
+  border:solid 2px var(--red);
+  color:var(--red);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Pour le mode sombre */
+button[data-mode="dark"] {
+  background-color: #2c3e50;
+}
+
+button[data-mode="dark"]:hover {
+  background-color: #1f2b38;
+}
+
+body {
+  background-color: #ffffff; /* Couleur de fond claire */
+  color: #000000; /* Couleur de texte noire */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style pour le mode sombre */
+body.dark-mode {
+  background-color: #000000; /* Fond noir */
+  color: #ffffff; /* Texte blanc */
+}
+
+/* Styles du bouton dark mode */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #666;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "☀️";
+  height: 34px;
+  width: 34px;
+  left: 0;
+  top: 0;
+  background-color: #ffcc00;
+  color: #000;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+  transition: transform 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  content: "🌙";
+}

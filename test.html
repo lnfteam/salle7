@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<body>
+<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.color-blind-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+
+        body.daltonism-mode {
+            background-color: #262626;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            border-bottom: 2px solid #61dafb;
+            padding-bottom: 10px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #0066cc;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+
+
+<button onclick="toggleDaltonismMode()">Toggle Daltonism Mode</button>
+<script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('color-blind-mode', false);
+            document.body.classList.toggle('daltonism-mode');
+        }
+
+        function toggleDaltonismMode() {
+            document.body.classList.toggle('daltonism-mode', false);
+            document.body.classList.toggle('color-blind-mode');
+        }
+    </script>
+</body>
+</head>
+</html>
